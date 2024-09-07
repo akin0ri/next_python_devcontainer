@@ -20,10 +20,15 @@
 
 ## フロントエンド（Next.js）の起動方法
 
+0. 必要なパッケージのインストールをします
+```bash
+cd frontend
+npm install
+```
+
 1. ターミナルで以下のコマンドを実行します：
 
 ```bash
-cd frontend
 yarn dev
 ```
 

@@ -4,14 +4,11 @@ ARG NODE_VERSION=20
 
 RUN curl -fsSL https://deb.nodesource.com/setup_${NODE_VERSION}.x | bash - \
     && apt-get install -y nodejs
-    # && npm install -g npm
 
 WORKDIR /workspace
 
 # プロジェクト全体をコピー
 COPY . .
-
-# RUN npm install -g yarn
 
 # フロントエンドの依存関係をインストール
 RUN if [ -f "frontend/package.json" ]; then \
