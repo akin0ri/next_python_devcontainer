@@ -20,7 +20,7 @@ RUN if [ -f "backend/requirements.txt" ]; then \
     pip install -r backend/requirements.txt; \
 fi
 
-RUN node --version && npm --version && python --version
+# RUN node --version && npm --version && python --version
 
 RUN apt-get update && apt-get install -y postgresql postgresql-contrib libpq-dev
 
